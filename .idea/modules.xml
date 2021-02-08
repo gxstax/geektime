@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/geektime.iml" filepath="$PROJECT_DIR$/.idea/geektime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" filepath="$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" />
+    </modules>
+  </component>
+</project>
