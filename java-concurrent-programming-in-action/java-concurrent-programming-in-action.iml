@@ -24,5 +24,14 @@
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:config:1.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.multiverse:multiverse-alpha:0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.multiverse:multiverse-core:0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.multiverse:multiverse-instrumentation:0.6" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-tree:3.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-analysis:3.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-commons:3.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-util:3.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-all:3.2" level="project" />
   </component>
 </module>
