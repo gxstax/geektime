@@ -20,7 +20,7 @@ public class ControlStatementDemo3 {
 
     private UserLevelService userLevelService;
 
-    private static Map<UserLevel, UserLevelService> userLevelServiceMap = new HashMap<>();
+    private static Map<UserLevel, UserLevelService> userLevelServiceMap = new HashMap();
 
     static {
         userLevelServiceMap.put(UserLevel.SILVER, new SilverUserLevel());

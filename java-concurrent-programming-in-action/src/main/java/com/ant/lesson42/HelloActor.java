@@ -3,7 +3,6 @@ package com.ant.lesson42;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import akka.actor.UntypedAbstractActor;
 import akka.actor.UntypedActor;
 
 /**

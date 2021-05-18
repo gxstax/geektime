@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-concurrent-programming-in-action" />
         <module name="ugly-code" />
+        <module name="java-concurrent-programming-in-action" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-concurrent-programming-in-action" target="8" />
-      <module name="ugly-code" target="1.5" />
+      <module name="ugly-code" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
