@@ -27,6 +27,7 @@ public class Allocator {
         // 只要需要的资源有一个被使用，那么申请资源就申请不了
         while (als.contains(from) || als.contains(to)) {
             try {
+                // 当资源被占用时，线程进入等待
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
