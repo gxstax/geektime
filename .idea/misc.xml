@@ -8,8 +8,9 @@
       <list>
         <option value="$PROJECT_DIR$/java-concurrent-programming-in-action/pom.xml" />
         <option value="$PROJECT_DIR$/ugly-code/pom.xml" />
+        <option value="$PROJECT_DIR$/jvm/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8.0_181" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8.0_181" project-jdk-type="JavaSDK" />
 </project>

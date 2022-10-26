@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/geektime.iml" filepath="$PROJECT_DIR$/.idea/geektime.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" filepath="$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/ugly-code/ugly-code.iml" filepath="$PROJECT_DIR$/ugly-code/ugly-code.iml" />
     </modules>
   </component>
