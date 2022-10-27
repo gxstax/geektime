@@ -6,7 +6,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/java-concurrent-programming-in-action/pom.xml" />
         <option value="$PROJECT_DIR$/ugly-code/pom.xml" />
         <option value="$PROJECT_DIR$/jvm/pom.xml" />
       </list>

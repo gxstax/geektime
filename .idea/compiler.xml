@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ugly-code" />
-        <module name="java-concurrent-programming-in-action" />
+        <module name="jvm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-concurrent-programming-in-action" target="8" />
+      <module name="jvm" target="8" />
       <module name="ugly-code" target="6" />
     </bytecodeTargetLevel>
   </component>

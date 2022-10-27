@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.17">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../application/apache-maven-3.6.1/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../application/apache-maven-3.8.4/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../../application/apache-maven-3.6.1/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../application/apache-maven-3.8.4/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../../application/apache-maven-3.6.1/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../application/apache-maven-3.8.4/repository/geektime/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
