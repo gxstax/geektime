@@ -19,17 +19,26 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class Account {
     private int balance;
+    private String name;
     private final Lock lock
             = new ReentrantLock();
+
+    public Account(String name, int balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+
     // 转账
     void transfer(Account tar, int amt){
         while (true) {
+            System.out.println(Thread.currentThread().getId() + "执行。。。。。。");
             if(this.lock.tryLock()) {
                 try {
                     if (tar.lock.tryLock()) {
                         try {
                             this.balance -= amt;
                             tar.balance += amt;
+                            System.out.println(Thread.currentThread().getId() + " " + this.name + "给" + tar.name + "转账成功");
                         } finally {
                             tar.lock.unlock();
                         }
@@ -61,4 +70,23 @@ class Account {
             }//if
         }//while
     }//transfer
+
+    public static void main(String[] args) {
+        Account account1 = new Account("张三",100);
+        Account account2 = new Account("李四", 100);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                account1.transfer(account2, 2);
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                account2.transfer(account1, 2);
+            }
+        }).start();
+    }
 }

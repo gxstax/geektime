@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -9,9 +10,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ugly-code" />
         <module name="jvm" />
+        <module name="geektime" />
+        <module name="java-concurrent-programming-in-action" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="geektime" target="6" />
       <module name="java-concurrent-programming-in-action" target="8" />
       <module name="jvm" target="8" />
       <module name="ugly-code" target="6" />

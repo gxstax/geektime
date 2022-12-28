@@ -13,25 +13,26 @@ import java.util.function.Function;
  * @author Ant
  * @since 2021/3/18 12:42 下午
  */
-public class ObjPool<T, R> {
-    final List<T> pool;
+public class ObjPool<R> {
+    final List<TBean> pool;
 
     // 用信号量实现限流器
     final Semaphore sem;
 
     // 构造函数
-    public ObjPool(int size, T t) {
-        pool = new Vector<T>() {
+    public ObjPool(int size) {
+        pool = new Vector<TBean>() {
         };
         for (int i = 0; i < size; i++) {
-            pool.add(t);
+            TBean tBean = new TBean();
+            pool.add(tBean);
         }
         sem = new Semaphore(size);
     }
 
     // 利用对象池的对象，调用func
-    R exec(Function<T, R> func) throws InterruptedException {
-        T t = null;
+    R exec(Function<TBean, R> func) throws InterruptedException {
+        TBean t = null;
         sem.acquire();
         try {
             t = pool.remove(0);
@@ -42,13 +43,13 @@ public class ObjPool<T, R> {
         }
     }
 
-    private static String func(Long aLong) {
-        return String.valueOf(aLong);
+    private String func(TBean t) {
+        return String.valueOf(t.hashCode());
     }
 
     public static void main(String[] args) throws InterruptedException {
         // 创建对象池
-        ObjPool<Long, String> pool = new ObjPool<Long, String>(10, 2L);
+        ObjPool<String> pool = new ObjPool<String>(10);
 
         for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(new Runnable() {
@@ -56,7 +57,7 @@ public class ObjPool<T, R> {
                 public void run() {
                     // 通过对象池获取t，之后执行
                     try {
-                        System.out.println(pool.exec(ObjPool::func));
+                        System.out.println(pool.exec(pool::func));
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
