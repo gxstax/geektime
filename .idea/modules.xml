@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/geektime.iml" filepath="$PROJECT_DIR$/geektime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/id_generator/id_generator.iml" filepath="$PROJECT_DIR$/design-patterns/id_generator/id_generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" filepath="$PROJECT_DIR$/java-concurrent-programming-in-action/java-concurrent-programming-in-action.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/metrice/metrice.iml" filepath="$PROJECT_DIR$/design-patterns/metrice/metrice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/patterns/patterns.iml" filepath="$PROJECT_DIR$/design-patterns/patterns/patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/priciple/priciple.iml" filepath="$PROJECT_DIR$/design-patterns/priciple/priciple.iml" />
       <module fileurl="file://$PROJECT_DIR$/ugly-code/ugly-code.iml" filepath="$PROJECT_DIR$/ugly-code/ugly-code.iml" />
     </modules>
   </component>

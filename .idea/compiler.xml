@@ -8,16 +8,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ugly-code" />
         <module name="jvm" />
-        <module name="geektime" />
+        <module name="id_generator" />
         <module name="java-concurrent-programming-in-action" />
+        <module name="patterns" />
+        <module name="priciple" />
+        <module name="ugly-code" />
+        <module name="metrice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="geektime" target="6" />
+      <module name="design-patterns" target="1.8" />
+      <module name="geektime" target="1.8" />
+      <module name="id_generator" target="1.8" />
       <module name="java-concurrent-programming-in-action" target="8" />
       <module name="jvm" target="8" />
+      <module name="metrice" target="1.8" />
+      <module name="patterns" target="1.8" />
+      <module name="priciple" target="1.8" />
       <module name="ugly-code" target="6" />
     </bytecodeTargetLevel>
   </component>
