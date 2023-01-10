@@ -26,7 +26,7 @@
       <module name="metrice" target="1.8" />
       <module name="patterns" target="1.8" />
       <module name="priciple" target="1.8" />
-      <module name="ugly-code" target="6" />
+      <module name="ugly-code" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
