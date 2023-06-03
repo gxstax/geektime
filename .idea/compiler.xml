@@ -10,23 +10,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
         <module name="id_generator" />
-        <module name="java-concurrent-programming-in-action" />
+        <module name="metrices" />
         <module name="patterns" />
         <module name="priciple" />
-        <module name="ugly-code" />
+        <module name="priciples" />
+        <module name="pattern" />
         <module name="metrice" />
+        <module name="design-pattern" />
+        <module name="java-concurrent-programming-in-action" />
+        <module name="elastics" />
+        <module name="ugly-code" />
+        <module name="id_generators" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="design-patterns" target="1.8" />
-      <module name="geektime" target="1.8" />
       <module name="id_generator" target="1.8" />
-      <module name="java-concurrent-programming-in-action" target="8" />
-      <module name="jvm" target="8" />
       <module name="metrice" target="1.8" />
       <module name="patterns" target="1.8" />
       <module name="priciple" target="1.8" />
-      <module name="ugly-code" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
