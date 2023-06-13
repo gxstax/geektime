@@ -203,7 +203,7 @@ POST /animals/_search
           "bool":{
             "should":[
                { "term": { "text": "brown" }},
-                 { "term": { "text": "brown" }},
+               { "term": { "text": "brown" }}
             ]
           }
 
@@ -222,6 +222,7 @@ POST /blogs/_bulk
 {"title":"Apple iPad,Apple iPad", "content":"Apple iPad" }
 
 
+# 查询title he content 中都包含‘apple,ipad’的文档，但是title中的匹配算分高于content中的匹配算分，这时候就是title中会优先匹配
 POST blogs/_search
 {
   "query": {
@@ -237,7 +238,7 @@ POST blogs/_search
         {"match": {
           "content": {
             "query": "apple,ipad",
-            "boost":
+            "boost": 1
           }
         }}
       ]
@@ -255,6 +256,7 @@ POST /news/_bulk
 { "content":"Apple employee like Apple Pie and Apple Juice" }
 
 
+# 查询新闻内容有‘apple’的文档
 POST news/_search
 {
   "query": {
@@ -266,6 +268,7 @@ POST news/_search
   }
 }
 
+# 查询新闻内容有‘apple’，但是不包括‘pie’的文档
 POST news/_search
 {
   "query": {
@@ -280,6 +283,8 @@ POST news/_search
   }
 }
 
+
+# 不过滤content中有‘pie’的文档，但是倾向于把有‘pie’的文档算分调小
 POST news/_search
 {
   "query": {
