@@ -151,6 +151,9 @@ GET /artists/_analyze
 
 ## 相关资源
 - Elasticsearch IK分词插件 https://github.com/medcl/elasticsearch-analysis-ik/releases
+```shell
+./bin/elasticsearch-plugin install https://github.com/KennFalcon/elasticsearch-analysis-hanlp/releases/download/v7.1.0/elasticsearch-analysis-hanlp-7.1.0.zip
+```
 - Elasticsearch hanlp 分词插件 https://github.com/KennFalcon/elasticsearch-analysis-hanlp
 
 - 分词算法综述 https://zhuanlan.zhihu.com/p/50444885

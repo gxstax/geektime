@@ -22,7 +22,7 @@ services:
     networks:
       - hwc_es7net
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+    image: gxstax/elasticsearch:7.1.0
     container_name: es7_hot
     environment:
       - cluster.name=geektime-hwc
@@ -43,7 +43,7 @@ services:
     networks:
       - hwc_es7net
   elasticsearch2:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+    image: gxstax/elasticsearch:7.1.0
     container_name: es7_warm
     environment:
       - cluster.name=geektime-hwc
@@ -62,7 +62,7 @@ services:
     networks:
       - hwc_es7net
   elasticsearch3:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.0
+    image: gxstax/elasticsearch:7.1.0
     container_name: es7_cold
     environment:
       - cluster.name=geektime-hwc
