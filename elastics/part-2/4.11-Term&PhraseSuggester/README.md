@@ -1,6 +1,91 @@
 # Term & Phrase Suggester
 ## 课程Demo
+
 ```
+
+DELETE articles
+PUT articles
+{
+  "mappings": {
+    "properties": {
+      "title_completion":{
+        "type": "completion"
+      }
+    }
+  }
+}
+
+
+POST articles/_bulk
+{ "index": {} }
+{ "title_completion": "lucene is very cool" }
+{ "index" : { } }
+{ "title_completion": "Elasticsearch builds on top of lucene"}
+{ "index" : { } }
+{ "title_completion": "Elasticsearch rocks"}
+{ "index" : { } }
+{ "title_completion": "elastic is the company behind ELK stack"}
+{ "index" : { } }
+{ "title_completion": "Elk stack rocks"}
+{ "index" : {} }
+
+
+POST articles/_bulk
+{ "index": {} }
+{ "body": "lucene is very cool" }
+{ "index" : { } }
+{ "body": "Elasticsearch builds on top of lucene"}
+{ "index" : { } }
+{ "body": "Elasticsearch rocks"}
+{ "index" : { } }
+{ "body": "elastic is the company behind ELK stack"}
+{ "index" : { } }
+{ "body": "Elk stack rocks"}
+{ "index" : { } }
+{ "body": "elasticsearch is rock solid"}
+
+
+# 这里根据用户输入的text 会给出相应的推荐（比如lucen时一个拼写错误，则会给出正确推荐lucene），rock 由于有索引匹配，则不会给出推荐，如果想让rock也出现推荐词，则可以改suggest_mode为always
+POST articles/_search
+{
+  "size": 1, 
+  "query": {
+    "match": {
+      "body": "lucen rock"
+    }
+  },
+  "suggest": {
+    "term-suggestion": {
+      "text": "lucen rock",
+      "term": {
+        "suggest_mode": "missing",
+        "field": "body"
+      }
+    }
+  }
+}
+
+
+POST articles/_search
+{
+  "size": 1, 
+  "query": {
+    "match": {
+      "body": "lucen rock"
+    }
+  },
+  "suggest": {
+    "term-suggestion": {
+      "text": "lucen rock",
+      "term": {
+        "suggest_mode": "always",
+        "field": "body"
+      }
+    }
+  }
+}
+
+
 DELETE articles
 PUT articles
 {
