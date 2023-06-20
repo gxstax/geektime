@@ -19,6 +19,7 @@
         <module>design-pattern/metrices</module>
         <module>design-pattern/pattern</module>
         <module>design-pattern/priciples</module>
+        <module>linux-core</module>
     </modules>
 
 

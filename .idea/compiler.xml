@@ -16,6 +16,7 @@
         <module name="priciples" />
         <module name="pattern" />
         <module name="metrice" />
+        <module name="linux-core" />
         <module name="design-pattern" />
         <module name="java-concurrent-programming-in-action" />
         <module name="elastics" />
